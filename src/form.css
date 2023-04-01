@@ -10,17 +10,45 @@ color: gray;
 cursor: default;
 } */
 
+.form{
+    padding-top: 15vh;
+    box-sizing: border-box;
+    float: right;
+    margin-right: 10vw;
+}
+
+.header{
+    background-color: #F00000;
+    color: white;
+    text-align: center;
+    padding: 15px 70px;
+    background: #F00000;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.36);
+    border-radius: 5px;
+    height: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    /* font-weight: 800; */
+    font-size: 10px;
+    /* or 10px */
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
 .form-container {
-    width: 21.125rem;
+    /* width: 21.125rem;
     height: 17.625rem;
-    margin-left: 65%;
-    margin-top: 7%;
+    /* margin-left: 65%;
+    margin-top: 7%; */
     /* border: 1px solid #ccc; */
+    margin-top: 22px;
     padding: 25px;
     /* border-radius: 5px; */
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
+    border-radius: 7px; 
 }
 
 .form-field {

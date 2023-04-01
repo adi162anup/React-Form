@@ -38,6 +38,10 @@ function MyForm() {
     //   });
 
     return (
+        <div className="form">
+        <div className="header">
+        <b>Try it free 7 days</b> then ₹180/mo. thereafter 
+        </div>
         <div className="form-container">
         <form onSubmit={handleSubmit}>
             <div className="form-field">
@@ -83,6 +87,7 @@ function MyForm() {
             </div>
             <p className="para">By clicking the button you are agreeing to our <span className="spa">Terms and Services</span></p>
         </form>
+        </div>
         </div>
     )
     }
