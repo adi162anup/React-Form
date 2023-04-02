@@ -25,6 +25,7 @@ function MyForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(inputs);
+        console.log(mySkills);
         // if (validate()) {
         //     document.getElementById("submit").style.backgroundColor = "green";
         // }
