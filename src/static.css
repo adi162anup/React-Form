@@ -1,0 +1,31 @@
+.staticmain{
+    width: 50%;
+    padding-top: 30vh;
+    padding-left: 15%;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.staticmain h1{
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 30px;
+    letter-spacing: 0.025em;
+    /* white-space: pre-line;
+    text-align: left; */
+}
+
+.staticmain p{
+    width: auto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.018em;
+    /* white-space: pre-line;
+    text-align:left; */
+}
+
