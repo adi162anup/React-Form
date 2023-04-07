@@ -10,7 +10,7 @@ function MyForm() {
     // const disabledButtonClass = "submit-button-disabled";
 
     const validate = () => {
-        return inputs.username && inputs.email && inputs.pass && mySkills!=="Choose your skills";
+        return inputs.username && inputs.email && inputs.pass && mySkills!=="";
       };
 
     const handleChange = (event) => {
@@ -28,6 +28,13 @@ function MyForm() {
         event.preventDefault();
         console.log(inputs);
         console.log(mySkills);
+        setInputs({});
+        setMySkills("");
+        event.target.reset();
+        setTimeout(() => {
+            alert("Form submitted successfully");
+        }, 300);
+        // alert("Form submitted successfully");
         // if (validate()) {
         //     document.getElementById("submit").style.backgroundColor = "green";
         // }
