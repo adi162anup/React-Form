@@ -3,7 +3,8 @@ import './form.css';
 
 function MyForm() {
     const [inputs, setInputs] = useState({});
-    const [mySkills, setMySkills] = useState("Choose your skills");
+    const [mySkills, setMySkills] = useState("");
+    // const [mySelectedSkills, setMySelectedSkills] = useState("");
 
     // const enabledButtonClass = "submit-button-enabled";
     // const disabledButtonClass = "submit-button-disabled";
@@ -20,6 +21,7 @@ function MyForm() {
 
     const handleSelect = (event) => {
         setMySkills(event.target.value)
+        // setMySelectedSkills(event.target.value)
     }
     
     const handleSubmit = (event) => {
@@ -76,12 +78,13 @@ function MyForm() {
                 />
             </div>
             <div className="form-field">
-            <select value = {mySkills || ""} onChange={handleSelect} id="options">
-                <option default disabled>Choose your skills</option>
+            <select value = "" id="options" onChange={handleSelect}>
+                <option value="" defaultdisabled="true">Choose your skills</option>
                 <option value="HTML">HTML</option>
                 <option value="CSS">CSS</option>
                 <option value="JS">JS</option>
             </select>
+            <p>{mySkills}</p>
             </div>
             <div className="form-field">
             <button type = "submit" disabled={!validate()} id="submit" style={{ backgroundColor: validate() === true ? "#37CC8A" : validate() === false ? "#B5B5B5" : ""}}>CLAIM YOUR FREE TRIAL</button>
